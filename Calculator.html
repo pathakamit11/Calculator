@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator Micro Project Using Figma Design</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="calcDisplay">
+            <input id ="inputBox" type="text" placeholder="0">
+        </div>
+        <div class="calcKeypad">
+            <div class="calcButtons">
+                <div class="calcFrame1">
+                    <button id = "calcButton" onclick="appendToDisplay('7')">7</button>
+                    <button id = "calcButton" onclick="appendToDisplay('8')">8</button>
+                    <button id = "calcButton" onclick="appendToDisplay('9')">9</button>
+                    <button id = "calcButton" class="calcButtonDel" onclick="deleteValue()" >DEL</button>
+                </div>
+                <div class="calcFrame2">
+                    <button id = "calcButton" onclick="appendToDisplay('4')">4</button>
+                    <button id = "calcButton" onclick="appendToDisplay('5')">5</button>
+                    <button id = "calcButton" onclick="appendToDisplay('6')">6</button>
+                    <button id = "calcButton" onclick="appendToDisplay('+')">+</button>
+                </div>
+                <div class="calcFrame3">
+                    <button id = "calcButton" onclick="appendToDisplay('1')">1</button>
+                    <button id = "calcButton" onclick="appendToDisplay('2')">2</button>
+                    <button id = "calcButton" onclick="appendToDisplay('3')">3</button>
+                    <button id = "calcButton" onclick="appendToDisplay('-')">-</button>
+                </div>
+                <div class="calcFrame4">
+                    <button id = "calcButton" onclick="appendToDisplay('.')">.</button>
+                    <button id = "calcButton" onclick="appendToDisplay('0')">0</button>
+                    <button id = "calcButton" onclick="appendToDisplay('/')">/</button>
+                    <button id = "calcButton" onclick="appendToDisplay('*')">*</button>
+                </div>
+                <div class="calcFrame5">
+                    <button id = "calcButtonR"  onclick="clearDisplay()">RESET</button>
+                    <button id = "calcButtonSol" onclick="calculate()">=</button>
+                </div>
+            </div>
+            <div class="calcReset"></div>
+        </div>
+    </div>
+    <script src="CalculatorJs.js"></script>
+</body>
+</html>
